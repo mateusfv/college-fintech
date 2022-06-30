@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="./bootstrap.css" rel="stylesheet">
+
+        <!-- Meu CSS + Google Fonts -->
+        <link href="./main.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <title>Dashboard</title>
+    </head>
+    <body class="background">
+        <nav class="navbar navbar-expand-lg navigation" id="naviBar">
+            <div class="container-fluid">
+                <a class="nav-link dropdown-toggle navigation-text-main" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Junho
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item navigation-text" href="#">Janeiro</a></li>
+                    <li><a class="dropdown-item navigation-text" href="#">Fevereiro</a></li>
+                    <li><a class="dropdown-item navigation-text" href="#">Março</a></li>
+                    <li><a class="dropdown-item navigation-text" href="#">Abril</a></li>
+                    <li><a class="dropdown-item navigation-text" href="#">Maio</a></li>
+                    <li><a class="dropdown-item navigation-text" href="#">Junho</a></li>
+                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active navigation-text-active" aria-current="page" href="#">Dashboard</a>
+                        </li>
+                        <li>
+                        <div class="vr"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled navigation-text-inactive" href="#">Novo lançamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled navigation-text-inactive" href="#">Metas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled navigation-text-inactive" href="#">Estatísticas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled navigation-text-inactive" href="#">Calendário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled navigation-text-inactive" href="#">Configurações</a>
+                        </li>
+                    </ul>
+                    <!--profile me-2-->
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="./assets/images/toggler.svg">
+                </button>
+            </div>
+        </nav>
+        <div class="container d-flex justify-content-center my-3" id="header">
+            <div class="row">
+                <div class="col-12 col-md-3 dashboard-budget-text justify-content-center my-1">iniciou com R$232,00</div>
+                <div class="col-12 col-md-6 dashboard-budget-main justify-content-center my-1">R$ 2.577,85</div>
+                <div class="col-12 col-md-3 dashboard-budget-text justify-content-center my-1">previsto fechar com R$690,75</div>
+            </div>
+        </div>
+        <!-- News cards (5 max)-->
+        <div class="news-cards-scroll" id="newsCards">
+            <div class="card d-flex p-1 pe-2 money-in">
+                <div class="card-date d-flex">15/06</div>
+                <div class="card-text d-flex my-2">Devolução dinheiro</div>
+                <div class="card-value d-flex">+ R$ 80,00</div>
+            </div>
+            <div class="card d-flex p-1 pe-2 money-out">
+                <div class="card-date d-flex">18/06</div>
+                <div class="card-text d-flex my-2">Pagamento Internet</div>
+                <div class="card-value d-flex">- R$ 129,90</div>
+            </div>
+            <div class="card d-flex p-1 pe-2 note">
+                <div class="card-date d-flex">18/06</div>
+                <div class="card-text d-flex my-2">Comprar ração dos gatos</div>
+            </div>
+            <div class="card d-flex p-1 pe-2 credit">
+                <div class="card-date d-flex">22/06</div>
+                <div class="card-text d-flex my-2">Fatura cartão de crédito</div>
+                <div class="card-value d-flex">- R$ 1.567,20</div>
+            </div>
+            <div class="card d-flex p-1 pe-2 note">
+                <div class="card-date d-flex">23/06</div>
+                <div class="card-text d-flex my-2">Comprar presente da Ana</div>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="container-fluid" id="mainContent">
+            <div class="row mt-1">
+                <div class="col-12 col-lg-6">
+                    <div class="container p-1 p-md-3">
+                        <div class="row dashboard-content p-3 p-md-4">
+                            <div class="col-12 total receita mb-2 mb-md-4 d-inline-flex">
+                                <div class="container d-flex flex-column justify-content-center align-items-start">
+                                    <div class="value">+ R$ 4820,00</div>
+                                    <div class="name">Receita mensal</div>
+                                </div>
+                                <div class="container d-flex">
+                                    <img class="img-fluid graph" src="./assets/images/income-graph.svg" alt="Gráfico de Receitas">
+                                </div>
+                            </div>
+                            <div class="col-12 total despesa d-inline-flex">
+                                <div class="container d-flex flex-column justify-content-center align-items-start">
+                                    <div class="value">- R$ 2474,15</div>
+                                    <div class="name">Despesa mensal</div>
+                                </div>
+                                <div class="container d-flex">
+                                    <img class="img-fluid graph" src="./assets/images/expense-graph.svg" alt="Gráfico de Despesas">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="container p-1 p-md-3">
+                        <div class="row dashboard-content p-3 p-md-4">
+                            <div class="col-6 d-flex">
+                                <img class="img-fluid" src="./assets/images/chart.svg" alt="Gráfico de despesas">
+                            </div>
+                            <div class="col-6 expense-list d-flex align-items-center expense-items">
+                                <ul class="categories">
+                                    <li class="category1">Faculdade</li>
+                                    <li class="category2">Energia</li>
+                                    <li class="category3">Aluguel</li>
+                                    <li class="category4">Alimentação</li>
+                                    <li class="category5">Água</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- JS -->
+        <script src="./bootstrap.bundle.js"></script>
+    </body>
+</html>
